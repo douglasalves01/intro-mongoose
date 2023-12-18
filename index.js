@@ -11,3 +11,10 @@ db.once("open", () => {
   //abrindo a conexão
   console.log("Conectados ao MongoDB");
 });
+
+//criando Schema
+const pessoaSchema = new mongoose.Schema({
+  nome: String,
+  idade: Number,
+  profissao: String,
+});
