@@ -18,3 +18,12 @@ const pessoaSchema = new mongoose.Schema({
   idade: Number,
   profissao: String,
 });
+
+// criando model
+const Pessoa = mongoose.model("Pessoa", pessoaSchema);
+
+const douglas = new Pessoa({
+  nome: "Douglas",
+  idade: 30,
+  profissao: "Programador",
+});
